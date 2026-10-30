@@ -1,5 +1,5 @@
 // Permite abrir la app sin conexión. Si cambias archivos, sube el número de versión.
-const VERSION = "aplicar-libros-v1";
+const VERSION = "aplicar-libros-v2";
 const ARCHIVOS = [
   "./", "index.html", "estilos.css", "manifest.json",
   "datos/carnegie.js", "datos/citas.js",
