@@ -13,7 +13,9 @@ const Almacen = (() => {
       checkins: [],                 // { id, fecha, libroId, principioId, dia, resultado: "si"|"medio"|"no", texto }
       semanas: [],                  // resúmenes de semanas terminadas
       librosPropios: [],            // libros añadidos desde la app
-      citasPropias: []              // citas añadidas desde la app
+      citasPropias: [],             // citas añadidas desde la app
+      citasFavoritas: [],           // textos de las citas marcadas con ❤️
+      bienvenidaVista: false        // la pantalla de bienvenida solo sale la primera vez
     };
   }
 
