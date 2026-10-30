@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Aplicar libros</title>
+  <meta name="description" content="Aplica y recuerda lo que aprendes en los libros.">
+  <meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
+  <!-- iPhone: permite instalarla en la pantalla de inicio como una app -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Aplicar libros">
+  <link rel="apple-touch-icon" href="iconos/icono-180.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main id="pantalla"></main>
+
+  <nav class="pestanas">
+    <button data-pestana="hoy" class="activa"><span>☀️</span>Hoy</button>
+    <button data-pestana="progreso"><span>📈</span>Progreso</button>
+    <button data-pestana="citas"><span>💬</span>Citas</button>
+    <button data-pestana="libros"><span>📚</span>Libros</button>
+  </nav>
+
+  <dialog id="hoja"><div id="hoja-contenido"></div></dialog>
+
+  <!-- Contenido: un archivo por libro + citas -->
+  <script src="datos/carnegie.js"></script>
+  <script src="datos/citas.js"></script>
+  <!-- Lógica de la app -->
+  <script src="app/almacen.js"></script>
+  <script src="app/futuro.js"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>
